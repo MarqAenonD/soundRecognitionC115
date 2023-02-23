@@ -26,11 +26,13 @@ function gotResults(error, results) {
         img = document.getElementById("alien1");
 
         if (results[0].label == "bark") {
-            img.src = "dog.jpg";
+            img.src = "dog.png";
         } else if (results[0].label == "chirp") {
             img.src = "bird.png";
         } else if (results[0].label == "meow") {
-            img.src = "cat.jpg";
+            img.src = "cat.png";
+        } else if (results[0].label == "moo") {
+            img.src = "cow.png";
         } else {
             img.src = "listen.png";
         };
