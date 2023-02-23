@@ -23,7 +23,7 @@ function gotResults(error, results) {
         document.getElementById("result_label").style.color = "rgb(" + random_number_r + ", " + random_number_g + ", " + random_number_b + ")";
         document.getElementById("result_confidence").style.color = "rgb(" + random_number_r + ", " + random_number_g + ", " + random_number_b + ")";
 
-        img = document.getElementById("alien1");
+        img = document.getElementById("listen");
 
         if (results[0].label == "bark") {
             img.src = "dog.png";
